@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar bg-coffee fixed-top">
+        <div class="container-fluid">
+            <!-- Logo and Navbar Brand -->
+            <a class="navbar-brand text-white d-flex align-items-center ms-5" href="#">
+                <img src="img/Jati Coffee Ava.jpg" alt="Coffee Logo" class="logo me-4">Jati Coffee
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title d-flex align-items-center" id="offcanvasNavbarLabel">
+                        <img src="img/Neon box Jati Coffee.png" alt="Logo" class="logo me-4"> Jati Coffee
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+            <!-- Popup Banner -->
+        <div id="welcomePopup" class="popup">
+            <div class="popup-content text-center">
+                <img src="img/Jati Coffee Ava.jpg" alt="Coffee Logo" class="popup-logo">
+                <h2>Welcome to Jati Coffee</h2>
+                <p>We're glad to have you here! Enjoy the finest coffee experience.</p>
+                <button id="closePopup" class="btn btn-primary">Close</button>
+            </div>
+        </div>
+
+
+        <script>
+            window.onload = function() {
+                // Tampilkan pop-up saat halaman dimuat
+                document.getElementById('welcomePopup').style.display = 'flex';
+
+                // Tutup pop-up saat tombol 'Close' diklik
+                document.getElementById('closePopup').onclick = function() {
+                    document.getElementById('welcomePopup').style.display = 'none'; 
+                };
+            };
+        </script>
+
+    <!-- Header Section -->
+    <header class="header d-flex justify-content-xl-between align-items-center">
+        <div class="header-content">
+            <h1>Welcome to Jati Coffee</h1>
+            <p>The best place for coffee lovers</p>
+        </div>
+
+    </header>
+
+        <!-- About Section -->
+    <section class="about-section d-flex flex-column align-items-center">
+        <div class="about-content text-center">
+            <h2>About Us</h2>
+            <p>Welcome to The Daily Grind, your go-to coffee shop for the best brews in town. Our mission is to provide high-quality coffee and a cozy atmosphere where you can relax, work, or catch up with friends. Join us and experience the art of coffee-making!</p>
+        </div>
+    </section>
+
+    <!-- Promo Menu Section -->
+<section class="promo-menu py-5">
+    <div class="container">
+        <h2 class="text-start">Promo Menu</h2>
+        <div class="row">
+            <!-- Menu Item 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://serviamo.id/wp-content/uploads/2020/11/Perbedaan-Caffe-Latte-dan-Mocha-Latte.jpg" class="card-img-top" alt="Coffee 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Latte Promo</h5>
+                        <p class="card-text">Rp 25,000 <span class="discount-icon">20% OFF</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/premium-photo/hot-cappuccino-coffee_758367-5219.jpg" class="card-img-top" alt="Coffee 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Cappuccino Promo</h5>
+                        <p class="card-text">Rp 30,000 <span class="discount-icon">15% OFF</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://portfoliocoffee.ca/cdn/shop/articles/espresso_Coffee.jpg?v=1657808012" class="card-img-top" alt="Coffee 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Espresso Promo</h5>
+                        <p class="card-text">Rp 20,000 <span class="discount-icon">25% OFF</span></p>
+                    </div>
+                </div>
+            </div>
+
+              <!-- Menu Item 4 -->
+              <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.ctfassets.net/v601h1fyjgba/7cdNOhfEauvOFDfJx91p68/487c04ddacbc8228af9f852eea022397/Iced_Mocha_Hazelnut_Caffe.jpg" class="card-img-top" alt="Coffee 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Mocha Promo</h5>
+                        <p class="card-text">Rp 28,000 <span class="discount-icon">10% OFF</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item 5 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.weeatlivedowell.com/wp-content/uploads/2024/01/matcha-iced-latte.jpg" class="card-img-top" alt="Coffee 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Ice Matcha Latte</h5>
+                        <p class="card-text">Rp 32,000 <span class="discount-icon">18% OFF</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item 6 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://minichicmenu.com/wp-content/uploads/2023/07/red-velvet-latte-1.jpg" class="card-img-top" alt="Coffee 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Ice Redvelvet</h5>
+                        <p class="card-text">Rp 22,000 <span class="discount-icon">22% OFF</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Spesialis Paket Promo Section -->
+<section id="special-promo" class="special-promo py-5">
+    <div class="container text-center">
+        <h2 class="mb-5">Special Menu of The Month</h2>
+
+        <!-- Carousel for Promo Packages -->
+        <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First slide -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://i.pinimg.com/236x/33/32/89/333289e195acf4e9c96e1456369af8ba.jpg" class="img-fluid" alt="Promo 1">
+                            <h4>Mocktail Drink</h4>
+                            <p>Rp. 15.000</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/3/12/50cec969-ba2d-4fe5-a97e-b52a9fe535bc.jpg" class="img-fluid" alt="Promo 2">
+                            <h4>Ice Taro Blend</h4>
+                            <p>Rp. 20.000</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://www.52kitchenadventures.com/wp-content/uploads/2011/05/Blended-Iced-Coffee-1.jpg" class="img-fluid" alt="Promo 3">
+                            <h4>Ice Coklat Blend</h4>
+                            <p>Rp. 25.000</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second slide -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFlQpgtjBCRKPEUW9u52sfWYDDgHBYSRi3FQ&s" class="img-fluid" alt="Promo 4">
+                            <h4>Mixed Sampler</h4>
+                            <p>Rp. 75.000</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/4/13/0/DV2809_The-Sampler-Platter_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1523655234880.webp" class="img-fluid" alt="Promo 5">
+                            <h4>Seafood Sampler</h4>
+                            <p>Rp. 65.000</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://recipe-graphics.grocerywebsite.com/0_GraphicsRecipes/5607_4k.jpg" class="img-fluid" alt="Promo 6">
+                            <h4>Chicken Wings</h4>
+                            <p>Rp. 55.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<!-- Lokasi Section -->
+<section id="location" class="location-section py-5">
+    <div class="container text-center">
+        <h2 class="mb-5">Our Location</h2>
+        <p>Come visit us at our coffee shop! We're located in the heart of the city.</p>
+        
+        <!-- Animated Google Map -->
+        <div class="map-container">
+            <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789!2d-122.0842491234!3d37.422065987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb456bc9b2347%3A0xf64bf2f1275b435a!2sGoogleplex!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+
+<!-- Blog Section -->
+<section id="blog" class="blog-section py-5" style="background-image: url('img/coffee-background.jpg'); background-size: cover; background-position: center;">
+    <div class="container text-white">
+        <h2 class="mb-5 text-center">Our Coffee Blog</h2>
+
+        <div class="row">
+            <!-- Blog Post 1 -->
+            <div class="col-md-4">
+                <div class="blog-post mb-4">
+                    <img src="https://www.kbvresearch.com/images/blog/coffee-machine.jpg" alt="Coffee Brewing Tips" class="img-fluid rounded">
+                    <div class="blog-content mt-3">
+                        <h3>Coffee Brewing Tips</h3>
+                        <p>Discover the best tips for brewing the perfect cup of coffee at home. Learn about different brewing techniques, tools, and tips to enhance your coffee experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="col-md-4">
+                <div class="blog-post mb-4">
+                    <img src="https://www.themanual.com/wp-content/uploads/sites/9/2020/11/coffeebean.jpg?p=1" alt="Best Coffee Beans" class="img-fluid rounded">
+                    <div class="blog-content mt-3">
+                        <h3>Best Coffee Beans of the Year</h3>
+                        <p>Explore the top-rated coffee beans of the year, handpicked by our expert baristas. From rich and bold to smooth and mild, find the perfect beans for your taste.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="col-md-4">
+                <div class="blog-post mb-4">
+                    <img src="https://www.selecta.com/.imaging/focalpoint/940x705/dam/jcr:c3556235-7611-4eb8-8181-ef6c87b1ab08/img_2.webp" alt="Coffee Art Guide" class="img-fluid rounded">
+                    <div class="blog-content mt-3">
+                        <h3>Guide to Coffee Art</h3>
+                        <p>Learn the basics of creating beautiful coffee art designs. Whether you're a beginner or a seasoned barista, find out how to master latte art with our simple guide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer Section -->
+<footer class="footer bg-dark text-white py-4">
+    <div class="container text-center">
+        <p class="mb-3">Thank you for visiting Jati Coffee!</p>
+        <div class="social-icons mb-3">
+            <a href="https://www.instagram.com" target="_blank" class="me-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://wa.me/1234567890" target="_blank" class="me-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="social-icon">
+            </a>
+            <a href="mailto:yourmail@gmail.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" class="social-icon">
+            </a>
+        </div>
+        <p>&copy; Jati Coffee. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

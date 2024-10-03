@@ -1,0 +1,495 @@
+/* Navbar Background Color */
+.bg-coffee {
+    background-color: white
+}
+
+
+/* Mengubah warna teks navbar menjadi putih */
+.navbar .navbar-brand, 
+.navbar .nav-link {
+    color: black !important;
+    font-family: initial;
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00 !important; 
+}
+
+/* Logo in Navbar */
+.logo {
+    width: 60px; 
+    height: 90px;
+    object-fit: contain;
+}
+
+/* Perkecil ukuran ikon pada tombol navbar (toggler) */
+.navbar-toggler-icon {
+    width: 20px; 
+    height: 20px; 
+}
+
+/* Header Section */
+/* Header Style */
+.header {
+    height: 500px;
+    background-image: url('https://st2.depositphotos.com/2627021/10713/i/450/depositphotos_107135638-stock-photo-traditional-coffee-cup-with-heart.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    font-family: initial;
+    overflow: hidden;
+}
+
+/* Overlay to darken background */
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Centered content inside the header */
+.header-content {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    padding: 100px;
+    font-family: initial;
+}
+
+.header h1 {
+    font-size: 2rem; 
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); 
+}
+
+.header p {
+    font-size: 1.2rem; /* Ukuran font standar */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); 
+}
+
+/* Image positioning */
+.header-images {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.header-images img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-left: 50px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        height: 500px;
+    }
+
+    .header h1 {
+        font-size: 8vw; 
+    }
+
+    .header p {
+        font-size: 4vw;
+    }
+
+    .header-images img {
+        width: 80px; 
+        height: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        height: 500px; 
+    }
+
+    .header h1 {
+        font-size: 10vw;
+    }
+
+    .header p {
+        font-size: 5vw;
+    }
+
+    .header-images img {
+        width: 60px; 
+        height: 60px;
+    }
+}
+
+
+
+
+/* About Section */
+.about-section {
+    height: 450px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white; 
+    overflow: hidden;
+    font-family: initial;
+}
+
+/* Background image and blur effect */
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('img/coffee1.avif'); 
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px); 
+    z-index: 1; 
+}
+
+/* Content inside the about section */
+.about-content {
+    position: relative;
+    z-index: 2; 
+    padding: 20px;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+
+/* Promo Menu Section */
+.promo-menu {
+    background-color: #f4f4f4;
+    background-image: url('https://example.com/natural-background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.promo-menu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    z-index: 0;
+}
+
+.promo-menu h2 {
+    color: #333;
+    z-index: 1;
+    position: relative;
+    font-family: initial;
+    font-size: 24px;
+}
+
+.card {
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+    font-family: initial;
+}
+
+.discount-icon {
+    background-color: red;
+    color: white;
+    padding: 3px 5px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    font-family: initial;
+}
+
+
+
+/* Spesialis Paket Promo Section */
+.special-promo {
+    background-color: #f7f7f7;
+}
+
+.special-promo h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: initial;
+}
+
+.special-promo img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.special-promo h4 {
+    font-size: 24px;
+    color: black;
+    font-family: initial;
+}
+
+.special-promo p {
+    font-size: 1rem;
+    color: black;
+    font-family: initial;
+}
+
+/* Carousel Control Styling */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: lightgray;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .special-promo img {
+        height: 200px;
+    }
+    .special-promo h2 {
+        font-size: 2rem;
+    }
+    .special-promo h4 {
+        font-size: 1.2rem;
+    }
+    .special-promo p {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Lokasi Section */
+.location-section {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+}
+
+.location-section h2 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+    font-family: initial;
+}
+
+.location-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out;
+    font-family: initial;
+}
+
+/* Map container styling */
+.map-container {
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease-in-out;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* Blog Section */
+.blog-section {
+    background-color: rgba(0, 0, 0, 0.7); /* Overlay to darken the background image */
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.blog-section h2 {
+    font-size: 24px;
+    color: white;
+    font-family: initial;
+}
+
+.blog-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.blog-content {
+    padding: 10px;
+    text-align: left;
+}
+
+.blog-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: initial;
+}
+
+.blog-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: initial;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .blog-section h2 {
+        font-size: 2rem;
+    }
+
+    .blog-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .blog-content p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* Footer Section */
+.footer {
+    background-color: #333; /* Warna background gelap */
+    color: white; /* Warna teks putih */
+}
+
+.footer p {
+    font-size: 1.2rem; /* Ukuran font untuk teks ucapan terima kasih */
+    margin-bottom: 10px;
+    font-family: initial;
+}
+
+/* Social Icons */
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease; /* Efek hover */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Zoom in saat di hover */
+}
+
+/* Footer Text */
+.footer p:last-of-type {
+    margin-top: 20px;
+    font-size: 0.9rem; /* Ukuran teks lebih kecil untuk hak cipta */
+}
+
+
+/* Popup Banner */
+.popup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1000; 
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+.popup-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.popup h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: initial;
+}
+
+.popup p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: initial;
+}
+
+#closePopup {
+    padding: 10px 20px;
+}
+
+/* Animasi Goyangan */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
