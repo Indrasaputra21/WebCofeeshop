@@ -249,13 +249,13 @@
 }
 
 .special-promo h4 {
-    font-size: 14px;
+    font-size: 18px;
     color: black;
     font-family: initial;
 }
 
 .special-promo p {
-    font-size: 10px;
+    font-size: 12px;
     color: black;
     font-family: initial;
 }
@@ -277,10 +277,10 @@
         font-size: 24px;
     }
     .special-promo h4 {
-        font-size: 12px;
+        font-size: 18px;
     }
     .special-promo p {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
