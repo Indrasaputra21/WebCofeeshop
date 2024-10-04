@@ -255,7 +255,7 @@
 }
 
 .special-promo p {
-    font-size: 12px;
+    font-size: 16px;
     color: black;
     font-family: initial;
 }
@@ -280,7 +280,7 @@
         font-size: 18px;
     }
     .special-promo p {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 
