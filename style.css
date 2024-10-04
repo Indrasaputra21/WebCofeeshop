@@ -435,7 +435,8 @@
 /* Footer Text */
 .footer p:last-of-type {
     margin-top: 20px;
-    font-size: 0.9rem; /* Ukuran teks lebih kecil untuk hak cipta */
+    font-size: 14px;
+    font-family: initial; 
 }
 
 
