@@ -274,13 +274,13 @@
         height: 200px;
     }
     .special-promo h2 {
-        font-size: 2rem;
+        font-size: 24px;
     }
     .special-promo h4 {
-        font-size: 1.2rem;
+        font-size: 12px;
     }
     .special-promo p {
-        font-size: 1rem;
+        font-size: 10px;
     }
 }
 
