@@ -210,6 +210,16 @@
     font-size: 24px;
 }
 
+.promo-menu h5 {
+    font-size: 18px;
+    font-family: initial;
+}
+
+.promo-menu p {
+    font-size: 16px;
+    font-family: initial;
+}
+
 .card {
     margin-bottom: 20px;
     z-index: 1;
@@ -221,7 +231,7 @@
     background-color: red;
     color: white;
     padding: 3px 5px;
-    font-size: 0.9rem;
+    font-size: 12px;
     border-radius: 5px;
     font-family: initial;
 }
