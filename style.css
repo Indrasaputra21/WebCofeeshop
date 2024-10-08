@@ -412,9 +412,9 @@
 
 /* Blog Section */
 .blog-section {
-    background-color: rgba(0, 0, 0, 0.7); /* Overlay to darken the background image */
+    background-color: lightgray; /* Overlay to darken the background image */
     background-blend-mode: overlay;
-    color: white;
+    color: black;
 }
 
 .blog-section h2 {
@@ -439,12 +439,14 @@
     font-size: 1.5rem;
     margin-bottom: 10px;
     font-family: initial;
+    color: black;
 }
 
 .blog-content p {
     font-size: 12px;
     line-height: 1.5;
     font-family: initial;
+    color: black;
 }
 
 /* Responsiveness */
@@ -466,7 +468,7 @@
 
 /* Footer Section */
 .footer {
-    background-color: #333; /* Warna background gelap */
+    background-color: #785a2b; /* Warna background gelap */
     color: white; /* Warna teks putih */
 }
 
