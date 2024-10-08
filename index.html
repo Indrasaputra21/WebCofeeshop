@@ -9,42 +9,32 @@
 </head>
 <body>
 
-    <!-- Navbar Section -->
-    <nav class="navbar bg-coffee fixed-top">
-        <div class="container-fluid">
-            <!-- Logo and Navbar Brand -->
-            <a class="navbar-brand text-white d-flex align-items-center ms-5" href="#">
-                <img src="img/Jati Coffee Ava.jpg" alt="Coffee Logo" class="logo me-4">Jati Coffee
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title d-flex align-items-center" id="offcanvasNavbarLabel">
-                        <img src="img/Neon box Jati Coffee.png" alt="Logo" class="logo me-4"> Jati Coffee
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+     <!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <!-- Logo and Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="/img/Neon box Jati Coffee.png" alt="Jati Coffee Logo" class="logo me-2">
+            <span class="navbar-text">Jati Coffee</span>
+        </a>
+
+        <!-- Navbar Toggler (Hamburger Menu) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav text-center">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#">Order</a>
+                <a class="nav-link" href="#">Promo</a>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
             <!-- Popup Banner -->
         <div id="welcomePopup" class="popup">
