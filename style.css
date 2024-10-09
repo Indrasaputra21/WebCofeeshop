@@ -15,6 +15,7 @@
   }
   .navbar-text {
     color: white;
+    font-size: 18px;
   }
   
   .logo {
@@ -36,6 +37,7 @@
   
   .navbar-nav.text-center .nav-link {
     color: white;
+    font-size: 18px;
   }
   
   .navbar-nav .nav-link:hover {
