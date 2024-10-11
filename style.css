@@ -21,7 +21,7 @@
   .logo {
     width: 30px;  /* Ukuran logo */
     height: 30px; /* Ukuran logo */
-    margin-left: 15px; /* Jarak antara logo dan teks */
+    margin-left: 10px; /* Jarak antara logo dan teks */
   }
   
   .navbar-nav {
